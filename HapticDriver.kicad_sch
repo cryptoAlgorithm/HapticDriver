@@ -4,6 +4,10 @@
 	(generator_version "7.99")
 	(uuid "89c84321-602a-4eb8-8dad-33289e154cd9")
 	(paper "A4")
+	(title_block
+		(title "HapticDriver")
+		(rev "v0.1")
+	)
 	(lib_symbols
 		(symbol "74xx:74HCT595"
 			(exclude_from_sim no)
@@ -3014,16 +3018,52 @@
 		(uuid "0a9757dd-000e-4e2f-b086-ea7dd86d932e")
 	)
 	(no_connect
+		(at 128.27 113.03)
+		(uuid "171ac4d1-9ed2-45a3-8f31-b24fcb3224de")
+	)
+	(no_connect
+		(at 128.27 130.81)
+		(uuid "1c3b57ca-55fe-41ab-a0ad-e346165d182f")
+	)
+	(no_connect
 		(at 128.27 95.25)
 		(uuid "21a426ce-5ea4-46b8-9edc-df2d7050fb51")
+	)
+	(no_connect
+		(at 128.27 115.57)
+		(uuid "365ae5b4-862a-4f12-978f-dde73d89ce55")
+	)
+	(no_connect
+		(at 53.34 58.42)
+		(uuid "37cb0493-d6b9-488a-8fe9-28809575739d")
 	)
 	(no_connect
 		(at 36.83 105.41)
 		(uuid "39497106-f679-484b-a1a5-34168a7d91bd")
 	)
 	(no_connect
+		(at 128.27 148.59)
+		(uuid "4a43ce50-ea11-4a1f-852c-078667e388cf")
+	)
+	(no_connect
+		(at 128.27 163.83)
+		(uuid "5017afd8-ed68-4e31-a338-4bb64458030b")
+	)
+	(no_connect
 		(at 36.83 113.03)
 		(uuid "69d5d49f-d7ab-45e8-92a1-ec2ebcfcc69f")
+	)
+	(no_connect
+		(at 53.34 60.96)
+		(uuid "6d9b18e5-43a2-44b0-ade3-fdc08f0dc6a7")
+	)
+	(no_connect
+		(at 128.27 166.37)
+		(uuid "708ffece-eff1-4031-bc25-7043b574dc67")
+	)
+	(no_connect
+		(at 128.27 138.43)
+		(uuid "7274dfe7-8e68-4f52-af98-6a244cbda9ed")
 	)
 	(no_connect
 		(at 53.34 30.48)
@@ -3038,8 +3078,24 @@
 		(uuid "accb376a-6136-4ca6-88e5-259f6b4dbe51")
 	)
 	(no_connect
+		(at 128.27 156.21)
+		(uuid "b61285a0-de8d-4c3f-8ba5-26b1ffc96be5")
+	)
+	(no_connect
+		(at 128.27 140.97)
+		(uuid "beab8524-9220-4b7f-af52-90334d7c859d")
+	)
+	(no_connect
 		(at 36.83 102.87)
 		(uuid "c0011db2-453c-4d31-8185-d5b052cb39f4")
+	)
+	(no_connect
+		(at 128.27 151.13)
+		(uuid "eaba7dbb-fb0c-4726-9783-c92c2f5fa73a")
+	)
+	(no_connect
+		(at 128.27 128.27)
+		(uuid "ee708f00-8753-47c4-b011-80247ba50c02")
 	)
 	(no_connect
 		(at 36.83 110.49)
@@ -3321,7 +3377,7 @@
 	)
 	(text_box "Note: GPIO46 is a strapping pin, pulled down to 0 on boot. Since nFAULT is open collector, this does not affect behaviour."
 		(exclude_from_sim no)
-		(at 138.43 160.02 0)
+		(at 140.97 160.02 0)
 		(size 30.48 11.43)
 		(stroke
 			(width 0)

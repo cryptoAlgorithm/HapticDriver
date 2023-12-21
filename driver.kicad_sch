@@ -4,6 +4,10 @@
 	(generator_version "7.99")
 	(uuid "3f2af088-d2a0-4ef6-b079-758d2de0fa93")
 	(paper "A4")
+	(title_block
+		(title "HapticDriver")
+		(rev "v0.1")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
