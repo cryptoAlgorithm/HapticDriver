@@ -3074,16 +3074,16 @@
 		(uuid "91ee11e3-adef-4d30-ab7b-0d6261f873b0")
 	)
 	(no_connect
+		(at 128.27 158.75)
+		(uuid "a386cf80-b031-404f-b805-89c0a3f551c0")
+	)
+	(no_connect
 		(at 36.83 115.57)
 		(uuid "accb376a-6136-4ca6-88e5-259f6b4dbe51")
 	)
 	(no_connect
 		(at 128.27 156.21)
 		(uuid "b61285a0-de8d-4c3f-8ba5-26b1ffc96be5")
-	)
-	(no_connect
-		(at 128.27 140.97)
-		(uuid "beab8524-9220-4b7f-af52-90334d7c859d")
 	)
 	(no_connect
 		(at 36.83 102.87)
@@ -3375,10 +3375,10 @@
 		)
 		(uuid "e52fe68f-e2ce-4bb0-95b7-6d8a7051a86e")
 	)
-	(text_box "Note: GPIO46 is a strapping pin, pulled down to 0 on boot. Since nFAULT is open collector, this does not affect behaviour."
+	(text_box "Note: GPIO46 is a strapping pin, is pulled down and should be read as 0 on boot. Since nFAULT is open collector, this does not affect behaviour."
 		(exclude_from_sim no)
 		(at 140.97 160.02 0)
-		(size 30.48 11.43)
+		(size 33.02 11.43)
 		(stroke
 			(width 0)
 			(type default)
@@ -3393,6 +3393,25 @@
 			(justify left top)
 		)
 		(uuid "5b79463b-ae73-478f-a729-ba2599a3b8f0")
+	)
+	(text_box "Strapping Pins\n\nGPIO0 - BOOT\nGPIO46 - Boot mode\nGPIO45 - VDD_SPI\nGPIO3 - JTAG Signal Source"
+		(exclude_from_sim no)
+		(at 40.64 153.67 0)
+		(size 30.48 13.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c11eae8f-5388-4b6c-bfe9-137798d425df")
 	)
 	(label "D3_IN2"
 		(at 224.79 41.91 0)
@@ -3481,17 +3500,6 @@
 			(justify left bottom)
 		)
 		(uuid "0de51b1b-742b-4e48-a14c-753b85f616b2")
-	)
-	(label "nFAULT_5"
-		(at 128.27 143.51 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e27c310-bef5-454a-9e3e-d5f274ece004")
 	)
 	(label "DRV_SDA"
 		(at 212.09 111.76 180)
@@ -3680,6 +3688,17 @@
 		)
 		(uuid "49ed01a5-f36e-4e98-a57a-c54252dbffd0")
 	)
+	(label "DRV_SCL"
+		(at 128.27 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c887fa6-de49-4a34-931c-343acd1838f2")
+	)
 	(label "nFAULT_1"
 		(at 128.27 118.11 0)
 		(fields_autoplaced yes)
@@ -3712,17 +3731,6 @@
 			(justify right bottom)
 		)
 		(uuid "559c5fc5-c5f1-4a57-a814-8ed1ebf3bbe9")
-	)
-	(label "DRV_SDA"
-		(at 128.27 158.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "56367883-9136-4186-b681-dde63684bcdc")
 	)
 	(label "USB_DP"
 		(at 128.27 102.87 0)
@@ -3833,6 +3841,17 @@
 			(justify left bottom)
 		)
 		(uuid "659a7d74-1288-4ee8-9bc1-bab03e9872c3")
+	)
+	(label "nFAULT_5"
+		(at 128.27 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6628ba00-4a92-4599-8440-bc671eccbf77")
 	)
 	(label "nFAULT_6"
 		(at 271.78 130.81 0)
@@ -4031,6 +4050,17 @@
 			(justify left bottom)
 		)
 		(uuid "a17ec226-dcf4-415f-8c6f-db9c04624bb4")
+	)
+	(label "DRV_SDA"
+		(at 128.27 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3d07ef5-1586-4c0a-a9a3-ad47a7d11c4c")
 	)
 	(label "DRV_SCL"
 		(at 172.72 146.05 180)
@@ -4274,6 +4304,17 @@
 		)
 		(uuid "dfe1441b-796b-482c-8c06-a007223fd0f9")
 	)
+	(label "nFAULT_3"
+		(at 128.27 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5d6412e-51f7-4b74-be56-212295ec0f28")
+	)
 	(label "nFAULT_4"
 		(at 193.04 130.81 0)
 		(fields_autoplaced yes)
@@ -4329,17 +4370,6 @@
 		)
 		(uuid "f40c6680-0c89-4876-84fe-bad5d8f4566b")
 	)
-	(label "DRV_SCL"
-		(at 128.27 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f463883a-9a2d-4fb4-8a19-61cec3fc1e6a")
-	)
 	(label "USB_DM"
 		(at 55.88 44.45 0)
 		(fields_autoplaced yes)
@@ -4361,17 +4391,6 @@
 			(justify right bottom)
 		)
 		(uuid "ff38979c-0d08-4bf8-8f45-c59f7a83d46f")
-	)
-	(label "nFAULT_3"
-		(at 128.27 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ff7a36c6-347b-4e98-8ed5-f158799754e2")
 	)
 	(symbol
 		(lib_id "power:+3V3")
