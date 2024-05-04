@@ -6,14 +6,14 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.09999999999999999,
-        "copper_line_width": 0.19999999999999998,
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -24,7 +24,7 @@
           "text_position": 0,
           "units_format": 1
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.17
         }
       },
       "diff_pair_dimensions": [
@@ -75,6 +75,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
@@ -119,15 +120,15 @@
         "min_copper_edge_clearance": 0.3,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
@@ -600,24 +601,16 @@
       "Driver 1"
     ],
     [
-      "29a04980-63c5-4978-874d-4740cc9009e0",
+      "2c530d14-1ef3-4f14-904d-5a3fc613eb72",
       "Driver 2"
     ],
     [
-      "0c6616b8-caea-49f5-b1bd-ac3cf2086059",
-      "Driver 3"
+      "4262f137-edaa-4c78-9028-09593ec67ff5",
+      "Power"
     ],
     [
-      "c8f9c662-da48-4f16-b16c-f400a4a5d639",
-      "Driver 4"
-    ],
-    [
-      "05e9618e-aa58-4551-9572-71bb254b65fe",
-      "Driver 5"
-    ],
-    [
-      "fe572b08-4318-4031-8c18-eb3a7fa1b231",
-      "Driver 6"
+      "b3e69e2e-4dc8-4887-b929-c22fdd8d84cb",
+      "Audio"
     ]
   ],
   "text_variables": {}

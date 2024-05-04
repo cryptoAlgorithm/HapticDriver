@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "Regulator_Ti")(type "KiCad")(uri "${KIPRJMOD}/Symbols/Ti_Reg.kicad_sym")(options "")(descr ""))
+  (lib (name "DRV8912")(type "KiCad")(uri "${KIPRJMOD}/Symbols/drv8912.kicad_sym")(options "")(descr ""))
+  (lib (name "tps561201")(type "KiCad")(uri "${KIPRJMOD}/Symbols/tps561201.kicad_sym")(options "")(descr ""))
 )

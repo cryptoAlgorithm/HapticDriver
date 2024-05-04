@@ -1,7 +1,7 @@
 (kicad_sch
 	(version 20231120)
 	(generator "eeschema")
-	(generator_version "7.99")
+	(generator_version "8.0")
 	(uuid "89c84321-602a-4eb8-8dad-33289e154cd9")
 	(paper "A4")
 	(title_block
@@ -9,375 +9,6 @@
 		(rev "v0.1")
 	)
 	(lib_symbols
-		(symbol "74xx:74HCT595"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "74HCT595"
-				(at -7.62 -16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "8-bit serial in/out Shift Register 3-State Outputs"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "HCTMOS SR 3State"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SOIC*5.3x10.2mm*P1.27mm* SOIC*7.5x10.3mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "74HCT595_1_0"
-				(pin tri_state line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "QB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "~{SRCLR}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "SRCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "RCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "~{OE}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(name "SER"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(name "QA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 15.24 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "QC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "QD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "QE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "QF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "QG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 10.16 -7.62 180)
-					(length 2.54)
-					(name "QH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -12.7 180)
-					(length 2.54)
-					(name "QH'"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HCT595_1_1"
-				(rectangle
-					(start -7.62 12.7)
-					(end 7.62 -15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016) hide)
@@ -2405,207 +2036,6 @@
 				)
 			)
 		)
-		(symbol "Regulator_Ti:REG1117-3.3"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 33.02 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "REG1117-3.3"
-				(at 33.02 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "DCY4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "REG1117-3.3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "REG1117-3.3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DCY4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "REG1117-3.3_0_1"
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 58.42 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 58.42 -7.62) (xy 58.42 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 58.42 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 0 0)
-					(length 7.62)
-					(name "GROUND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 66.04 -2.54 180)
-					(length 7.62)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 66.04 0 180)
-					(length 7.62)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Switch:SW_Omron_B3FS"
 			(pin_numbers hide)
 			(pin_names
@@ -3126,10 +2556,6 @@
 		(uuid "171ac4d1-9ed2-45a3-8f31-b24fcb3224de")
 	)
 	(no_connect
-		(at 128.27 130.81)
-		(uuid "1c3b57ca-55fe-41ab-a0ad-e346165d182f")
-	)
-	(no_connect
 		(at 128.27 115.57)
 		(uuid "365ae5b4-862a-4f12-978f-dde73d89ce55")
 	)
@@ -3142,12 +2568,12 @@
 		(uuid "39497106-f679-484b-a1a5-34168a7d91bd")
 	)
 	(no_connect
-		(at 128.27 148.59)
-		(uuid "4a43ce50-ea11-4a1f-852c-078667e388cf")
-	)
-	(no_connect
 		(at 128.27 163.83)
 		(uuid "5017afd8-ed68-4e31-a338-4bb64458030b")
+	)
+	(no_connect
+		(at 128.27 118.11)
+		(uuid "6755337e-672f-4a07-b3fa-34f31bc6f5a6")
 	)
 	(no_connect
 		(at 36.83 113.03)
@@ -3160,10 +2586,6 @@
 	(no_connect
 		(at 128.27 166.37)
 		(uuid "708ffece-eff1-4031-bc25-7043b574dc67")
-	)
-	(no_connect
-		(at 128.27 138.43)
-		(uuid "7274dfe7-8e68-4f52-af98-6a244cbda9ed")
 	)
 	(no_connect
 		(at 46.99 26.67)
@@ -3190,40 +2612,8 @@
 		(uuid "c0011db2-453c-4d31-8185-d5b052cb39f4")
 	)
 	(no_connect
-		(at 128.27 151.13)
-		(uuid "eaba7dbb-fb0c-4726-9783-c92c2f5fa73a")
-	)
-	(no_connect
-		(at 128.27 128.27)
-		(uuid "ee708f00-8753-47c4-b011-80247ba50c02")
-	)
-	(no_connect
 		(at 36.83 110.49)
 		(uuid "fd5f9c4d-e019-4668-8a98-14f6fd464419")
-	)
-	(no_connect
-		(at 271.78 64.77)
-		(uuid "ffc3efb6-1325-4a83-90c4-67a980f6d080")
-	)
-	(wire
-		(pts
-			(xy 199.39 64.77) (xy 199.39 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a1eadbe-f899-471a-8803-8d103389b848")
-	)
-	(wire
-		(pts
-			(xy 229.87 64.77) (xy 241.3 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a48e8c8-1eb4-4232-9611-719d89be0424")
 	)
 	(wire
 		(pts
@@ -3277,26 +2667,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 26.67) (xy 130.81 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ee8bbe4-bc96-4acc-8868-3292b348fd55")
-	)
-	(wire
-		(pts
-			(xy 241.3 41.91) (xy 241.3 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42ffde2b-6b4d-433e-a1f3-8b0a1e4a3a51")
-	)
-	(wire
-		(pts
 			(xy 67.31 72.39) (xy 67.31 71.12)
 		)
 		(stroke
@@ -3344,26 +2714,6 @@
 			(type default)
 		)
 		(uuid "53cebf4f-c051-416d-b9e8-a6b72e384477")
-	)
-	(wire
-		(pts
-			(xy 251.46 41.91) (xy 241.3 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61e7d1b1-bd92-47c0-96ec-829f75df18ab")
-	)
-	(wire
-		(pts
-			(xy 142.24 26.67) (xy 140.97 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c1be8fc-ca72-4139-acfb-1a5cc570ec4c")
 	)
 	(wire
 		(pts
@@ -3427,16 +2777,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 64.77) (xy 199.39 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a12d021a-ffa3-4198-9aa4-089c61a99394")
-	)
-	(wire
-		(pts
 			(xy 67.31 82.55) (xy 67.31 81.28)
 		)
 		(stroke
@@ -3444,16 +2784,6 @@
 			(type default)
 		)
 		(uuid "abb3abd7-bdc4-4ae0-a524-6be89187145f")
-	)
-	(wire
-		(pts
-			(xy 133.35 26.67) (xy 130.81 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad5d63d6-9213-4d99-b489-0bd29cfa0a8b")
 	)
 	(wire
 		(pts
@@ -3497,16 +2827,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 41.91) (xy 209.55 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e52fe68f-e2ce-4bb0-95b7-6d8a7051a86e")
-	)
-	(wire
-		(pts
 			(xy 67.31 81.28) (xy 67.31 80.01)
 		)
 		(stroke
@@ -3526,18 +2846,6 @@
 			(type none)
 		)
 		(uuid 6abaab4e-54d3-4883-8dc7-5f046611a04b)
-	)
-	(rectangle
-		(start 154.94 27.94)
-		(end 280.67 78.74)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6b2e2871-1f4d-4e3b-88bc-dd04a7e506bc)
 	)
 	(rectangle
 		(start 156.21 92.71)
@@ -3619,17 +2927,6 @@
 		)
 		(uuid "2206292d-e86f-4bb6-984d-03095b39fd4e")
 	)
-	(text "Shift Registers"
-		(exclude_from_sim no)
-		(at 279.654 76.962 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2c0f3bbe-c3d0-494e-a093-1470582a4a3f")
-	)
 	(text "CHIP_PU"
 		(exclude_from_sim no)
 		(at 54.356 88.392 0)
@@ -3641,19 +2938,8 @@
 		)
 		(uuid "d21e6b67-2134-47e9-93bd-41764f7cdf33")
 	)
-	(label "D3_IN2"
-		(at 229.87 41.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "00a76d65-8929-4f38-9489-d52ed23bfaa4")
-	)
-	(label "D6_IN3"
-		(at 247.65 138.43 180)
+	(label "I2S_BCLK"
+		(at 173.99 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3661,128 +2947,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "06c5d0f3-c570-47c6-9dc3-73a3eecd58ed")
-	)
-	(label "D4_IN3"
-		(at 168.91 138.43 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "07935dce-a60e-49e9-a083-ad6348932fb9")
-	)
-	(label "DRV_SDA"
-		(at 142.24 26.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "082a278f-1856-485e-b1cc-9446429dd5e2")
-	)
-	(label "D5_IN1"
-		(at 229.87 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0b0b17e6-5d02-4783-b122-80e7410d52ab")
-	)
-	(label "D2_IN2"
-		(at 208.28 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0c2f5105-96bd-4484-bf16-74855d1e4531")
-	)
-	(label "DRV_SDA"
-		(at 247.65 114.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0cb96bc4-c66f-430d-8e6b-beecb4e04e68")
-	)
-	(label "D6_IN1"
-		(at 187.96 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0de51b1b-742b-4e48-a14c-753b85f616b2")
-	)
-	(label "DRV_SDA"
-		(at 208.28 114.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0eff30d3-e6a6-4e80-b872-aa4620fdf9e4")
-	)
-	(label "I2S_DATA"
-		(at 167.64 41.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "109b6b41-48ff-4b14-a0e4-215c52c6d77d")
-	)
-	(label "D1_IN2"
-		(at 187.96 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "121bb25b-8afd-4180-a02c-bbfb79710404")
-	)
-	(label "D6_IN4"
-		(at 187.96 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1353e378-5126-4c9b-a41a-dad85b52c782")
-	)
-	(label "DRV_SDA"
-		(at 247.65 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "15297922-f194-4e30-b791-9e4896538594")
+		(uuid "0b1004e8-78f5-43d4-bd3d-a6558145b5f7")
 	)
 	(label "USB_DM"
 		(at 128.27 105.41 0)
@@ -3795,8 +2960,19 @@
 		)
 		(uuid "1f6dff60-f27a-498a-88a3-06dbda5df785")
 	)
-	(label "D3_IN3"
-		(at 247.65 106.68 180)
+	(label "DRV_MOSI"
+		(at 128.27 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fb2fff9-fef3-4dbf-98cb-d145ae415885")
+	)
+	(label "DRV_MISO"
+		(at 172.72 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3804,10 +2980,10 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "202bd81a-290c-48ac-8da6-a68c65b467fc")
+		(uuid "2942657e-010e-4252-9c30-9e220d5a1dbf")
 	)
-	(label "I2S_WS"
-		(at 209.55 54.61 180)
+	(label "DRV_SCK"
+		(at 172.72 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3815,62 +2991,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2593823e-aab7-473d-a90a-afbe10fee707")
-	)
-	(label "D6_IN2"
-		(at 187.96 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26de3768-d756-47c1-81cc-e8852f27474e")
-	)
-	(label "D5_IN4"
-		(at 229.87 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "29993878-b86a-45d9-87b4-e87bf4937e82")
-	)
-	(label "D1_IN3"
-		(at 187.96 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "29b9fada-051a-45d8-bb85-3f09423a89d9")
-	)
-	(label "DRV_SDA"
-		(at 168.91 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2af99418-9e44-41b7-9ece-29a7de741f4d")
-	)
-	(label "D2_IN2"
-		(at 271.78 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2f789cd0-bce5-4bba-ab3d-44d324ec0559")
+		(uuid "2b17cf1a-433f-4976-88e3-7f2cdfd59360")
 	)
 	(label "EN"
 		(at 36.83 95.25 180)
@@ -3883,8 +3004,8 @@
 		)
 		(uuid "30ea73a4-f369-45da-a07b-b7b422165251")
 	)
-	(label "D3_IN1"
-		(at 247.65 101.6 180)
+	(label "DRV_SCK"
+		(at 215.9 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3892,10 +3013,10 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3171a573-1536-4961-9e35-117ce95dfea4")
+		(uuid "40c620e9-42f0-4ec6-8c53-104b9b239dd0")
 	)
-	(label "D3_IN3"
-		(at 229.87 49.53 0)
+	(label "nFAULT_1"
+		(at 128.27 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3903,29 +3024,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "428877cf-1ad3-4bea-851b-c883653938e1")
-	)
-	(label "D3_IN4"
-		(at 247.65 109.22 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "432f556d-313b-40b1-a34e-2f4462e83b7b")
-	)
-	(label "D4_IN1"
-		(at 271.78 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "49ed01a5-f36e-4e98-a57a-c54252dbffd0")
+		(uuid "4a70b1b8-8e18-4ce0-b740-c02458bebd3d")
 	)
 	(label "DRV_SCL"
 		(at 128.27 146.05 0)
@@ -3938,8 +3037,8 @@
 		)
 		(uuid "4c887fa6-de49-4a34-931c-343acd1838f2")
 	)
-	(label "nFAULT_1"
-		(at 128.27 118.11 0)
+	(label "DRV_MISO"
+		(at 128.27 148.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3947,10 +3046,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4fbb55ac-a1e3-4e9d-a94a-e91a7483fe86")
+		(uuid "4d5459ca-1825-4409-92c2-efe13dc39f6b")
 	)
-	(label "DRV_SCL"
-		(at 208.28 148.59 180)
+	(label "DRV_CS_2"
+		(at 215.9 111.76 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3958,18 +3057,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5300db33-0ef9-485e-8ec0-905210502249")
-	)
-	(label "I2S_WS"
-		(at 251.46 54.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "559c5fc5-c5f1-4a57-a814-8ed1ebf3bbe9")
+		(uuid "526f9c71-a182-4a79-8631-a8452c7a00ee")
 	)
 	(label "USB_DP"
 		(at 128.27 102.87 0)
@@ -3982,129 +3070,8 @@
 		)
 		(uuid "566a5a55-7d78-4333-9fe5-1bff02127d5d")
 	)
-	(label "D2_IN4"
-		(at 271.78 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "57b0beac-5738-4105-be99-f775945977f6")
-	)
-	(label "DRV_SCL"
-		(at 247.65 116.84 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5b42842d-e4d3-4495-90d7-538d29f33864")
-	)
-	(label "DRV_SDA"
-		(at 208.28 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5b7fe6b2-9294-4f58-b605-3d33cef93b1e")
-	)
-	(label "D2_IN3"
-		(at 271.78 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5be99048-8fb6-477b-af4f-36b4cb121cee")
-	)
-	(label "I2S_BCLK"
-		(at 167.64 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5d4cd938-69a7-419d-a0cc-99ed26547275")
-	)
-	(label "D4_IN2"
-		(at 271.78 41.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5da7e815-9141-4e7f-b1ae-cd0ad63cf3aa")
-	)
-	(label "D3_IN2"
-		(at 247.65 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6224a658-ab36-4416-a25b-419f1dae5aa8")
-	)
-	(label "nFAULT_3"
-		(at 267.97 101.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "64990a27-db3f-4207-83a8-868e4b494c1e")
-	)
-	(label "D2_IN1"
-		(at 271.78 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "659a7d74-1288-4ee8-9bc1-bab03e9872c3")
-	)
-	(label "nFAULT_5"
-		(at 128.27 143.51 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6628ba00-4a92-4599-8440-bc671eccbf77")
-	)
-	(label "nFAULT_6"
-		(at 267.97 133.35 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "690062fc-d613-4a60-84c7-a6e3302d88d1")
-	)
 	(label "nFAULT_2"
-		(at 228.6 101.6 0)
+		(at 236.22 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4114,30 +3081,8 @@
 		)
 		(uuid "6a6eee71-71ee-450a-9678-e0cb103a277c")
 	)
-	(label "nFAULT_5"
-		(at 228.6 133.35 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6d69d596-4d3c-4b2b-a46c-2f1211af705a")
-	)
-	(label "D3_IN4"
-		(at 229.87 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6ecb75d4-02ac-43b3-944e-27616510fc94")
-	)
-	(label "D2_IN4"
-		(at 208.28 109.22 180)
+	(label "DRV_MISO"
+		(at 215.9 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4145,141 +3090,9 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "75a23d8b-d616-4be7-8984-ea3510459761")
+		(uuid "6ae66e76-1d53-4f81-b6a8-b331bd1a8141")
 	)
-	(label "D5_IN3"
-		(at 229.87 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "766dfc9f-6236-457e-b499-cd28e508bdb8")
-	)
-	(label "D1_IN1"
-		(at 168.91 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "789fbfaa-43c5-4c7c-8f0b-a47aefe52fa8")
-	)
-	(label "D5_IN4"
-		(at 208.28 140.97 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7abc3594-55f9-4805-b142-6a90dac8a27d")
-	)
-	(label "nFAULT_4"
-		(at 128.27 133.35 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ac318bb-3b24-4765-9216-2ce67ba61e04")
-	)
-	(label "D4_IN3"
-		(at 271.78 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c90f42a-ba98-4d08-b616-1ed04a720600")
-	)
-	(label "D5_IN2"
-		(at 208.28 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "842695ee-6367-4d5c-ab5d-975c59bf7550")
-	)
-	(label "DRV_SDA"
-		(at 168.91 114.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8486db78-facd-40e7-af70-138b1f6ab230")
-	)
-	(label "D4_IN4"
-		(at 271.78 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "84f552fc-5726-4077-9455-8be2e9e6bc7e")
-	)
-	(label "D1_IN3"
-		(at 168.91 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8a38d6e6-532c-4fce-82f1-652ae2e55ad2")
-	)
-	(label "D4_IN1"
-		(at 168.91 133.35 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8f52327c-84d3-4184-af43-1ef70dea4e32")
-	)
-	(label "D2_IN3"
-		(at 208.28 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "952e7d96-27df-4c89-89a0-f8076ef1eb8e")
-	)
-	(label "D3_IN1"
-		(at 229.87 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9e64debe-a2fc-4c1b-89b1-2da0516c7938")
-	)
-	(label "I2S_WS"
+	(label "DRV_CS_2"
 		(at 128.27 123.19 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4288,7 +3101,51 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a17ec226-dcf4-415f-8c6f-db9c04624bb4")
+		(uuid "6cf9cb3d-e22d-4211-9aba-cbc00ed05230")
+	)
+	(label "DRV_CS_1"
+		(at 128.27 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ee38239-eabd-4cee-849c-96aea6da6445")
+	)
+	(label "DRV_MOSI"
+		(at 215.9 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "833407f7-021d-487a-9d43-e7e210249d0e")
+	)
+	(label "nFAULT_2"
+		(at 128.27 151.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d87bfce-6453-4435-bb26-bd2ba8dc7c2b")
+	)
+	(label "DRV_SCK"
+		(at 128.27 120.65 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a067089a-aefe-4e47-9ef0-171741dc4c16")
 	)
 	(label "DRV_SDA"
 		(at 128.27 153.67 0)
@@ -4301,8 +3158,8 @@
 		)
 		(uuid "a3d07ef5-1586-4c0a-a9a3-ad47a7d11c4c")
 	)
-	(label "DRV_SCL"
-		(at 168.91 148.59 180)
+	(label "DRV_MOSI"
+		(at 172.72 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4310,43 +3167,10 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a582b2f9-1648-434d-8fcf-f7f376566e2d")
+		(uuid "a828f9b4-0daf-4559-86d0-751be65f9a27")
 	)
-	(label "D4_IN2"
-		(at 168.91 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a594c203-8d2c-4b56-bc36-d8b348634fc4")
-	)
-	(label "D6_IN1"
-		(at 247.65 133.35 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a628dfd6-ce5f-441e-a2c5-7f37bb51d91a")
-	)
-	(label "D5_IN1"
-		(at 208.28 133.35 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a89ccbfd-d853-4d8e-ba25-6e9a4273f54b")
-	)
-	(label "I2S_DATA"
-		(at 128.27 120.65 0)
+	(label "I2S_DIN"
+		(at 128.27 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4354,7 +3178,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b187c213-a3cf-4ce2-9109-a56b03c88de7")
+		(uuid "b4d80afd-27ec-4980-b87d-e64f0928b1c7")
+	)
+	(label "DRV_CS_1"
+		(at 172.72 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b5463534-e3d7-49da-ad7e-3d89a783aeee")
 	)
 	(label "EN"
 		(at 71.12 71.12 0)
@@ -4367,19 +3202,8 @@
 		)
 		(uuid "b5ee96c6-948b-45d3-b03b-c4aacd33022c")
 	)
-	(label "I2S_BCLK"
-		(at 251.46 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b6a44983-b505-4efc-a621-fee8e65f4d74")
-	)
-	(label "nFAULT_6"
-		(at 128.27 161.29 0)
+	(label "I2S_WCLK"
+		(at 128.27 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4387,10 +3211,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b7cc21dc-ad6e-4a07-8538-42eb7b34cdf8")
+		(uuid "bd811cc4-3e01-4671-89cf-70ed474c7af8")
 	)
-	(label "DRV_SCL"
-		(at 247.65 148.59 180)
+	(label "I2S_DIN"
+		(at 173.99 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4398,73 +3222,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b9fb161a-b186-45dc-bb5c-4a21422edc6a")
-	)
-	(label "D4_IN4"
-		(at 168.91 140.97 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ba7dedaf-2d09-4dfa-a66f-4b6ca892525b")
-	)
-	(label "D5_IN3"
-		(at 208.28 138.43 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bb249fae-ef06-442c-b1c1-dc68928b0a69")
-	)
-	(label "D6_IN2"
-		(at 247.65 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bdd6cf5d-f496-496a-9bac-cf0c5c21adf3")
-	)
-	(label "D5_IN2"
-		(at 229.87 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be431999-6324-4098-8cc5-4fa6fad4cc6c")
-	)
-	(label "I2S_BCLK"
-		(at 209.55 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c87bb172-9b64-47e2-90c9-a1bf7f63ea74")
-	)
-	(label "I2S_BCLK"
-		(at 128.27 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cb4e1614-3ec1-409a-b64d-e143dc406adf")
+		(uuid "c57efc5c-36d6-449c-8d26-648c91119b96")
 	)
 	(label "USB_DP"
 		(at 49.53 45.72 0)
@@ -4477,74 +3235,8 @@
 		)
 		(uuid "cd2af6db-531a-4d37-bb27-f3a0151f0e7e")
 	)
-	(label "D1_IN4"
-		(at 187.96 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d1721463-d820-4bdd-947a-4cf1e01e9966")
-	)
-	(label "D2_IN1"
-		(at 208.28 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d176180e-4f11-4c67-9aa0-37fa4624898b")
-	)
-	(label "D6_IN3"
-		(at 187.96 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d7322619-1baf-4389-a223-f8be0f9db704")
-	)
-	(label "D1_IN1"
-		(at 187.96 41.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "db640346-8b7a-4e34-b954-f8a6120228f9")
-	)
-	(label "DRV_SCL"
-		(at 208.28 116.84 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dc643d61-ce41-4270-ab75-361e97cf7466")
-	)
-	(label "D1_IN4"
-		(at 168.91 109.22 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "deb2ecdc-6a64-4379-89e4-2b616c60b86b")
-	)
 	(label "nFAULT_1"
-		(at 189.23 101.6 0)
+		(at 193.04 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4553,72 +3245,6 @@
 			(justify left bottom)
 		)
 		(uuid "dfe1441b-796b-482c-8c06-a007223fd0f9")
-	)
-	(label "nFAULT_3"
-		(at 128.27 140.97 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e5d6412e-51f7-4b74-be56-212295ec0f28")
-	)
-	(label "nFAULT_4"
-		(at 189.23 133.35 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e8ac04e2-dc1a-4e29-bc93-5ae6dff02a3a")
-	)
-	(label "D6_IN4"
-		(at 247.65 140.97 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e91550c3-9e5a-4297-9712-2c1f10b02de9")
-	)
-	(label "DRV_SCL"
-		(at 168.91 116.84 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f2d0a0a5-0333-4a57-9286-b22f2403144a")
-	)
-	(label "nFAULT_2"
-		(at 128.27 135.89 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f3541278-47e9-4054-8460-1b0f15f631b7")
-	)
-	(label "D1_IN2"
-		(at 168.91 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f40c6680-0c89-4876-84fe-bad5d8f4566b")
 	)
 	(label "USB_DM"
 		(at 49.53 40.64 0)
@@ -4631,8 +3257,8 @@
 		)
 		(uuid "f9dedc4b-3603-4a1b-9b1e-aa2edc227ef4")
 	)
-	(label "I2S_WS"
-		(at 167.64 54.61 180)
+	(label "I2S_WCLK"
+		(at 173.99 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4640,319 +3266,18 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ff38979c-0d08-4bf8-8f45-c59f7a83d46f")
+		(uuid "fc6f846f-3e41-4e41-8628-2a80aa8be918")
 	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 251.46 49.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(label "I2S_BCLK"
+		(at 128.27 140.97 0)
 		(fields_autoplaced yes)
-		(uuid "0e0a67e0-ea69-4a61-bf31-93fa6b2f3a0e")
-		(property "Reference" "#PWR064"
-			(at 255.27 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Value" "+3V3"
-			(at 247.65 49.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 251.46 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 251.46 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 251.46 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8eee3027-dbdc-4869-b922-1d3a8f490e8e")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74HCT595")
-		(at 261.62 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "121477c4-37b2-45ec-af99-f4d06d36d9ef")
-		(property "Reference" "U5"
-			(at 263.5759 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HCT595"
-			(at 263.5759 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 261.62 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf"
-			(at 261.62 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d91354d8-3501-4d35-bed5-0dbaf250e687")
-		)
-		(pin "10"
-			(uuid "c0bd0731-2ab3-40e4-aa99-960b5bafd045")
-		)
-		(pin "11"
-			(uuid "8419368f-21fd-474a-b40d-7fae16d95f1a")
-		)
-		(pin "12"
-			(uuid "b2b0c1fd-b6c9-4dd9-9fee-80fd8da40b5d")
-		)
-		(pin "13"
-			(uuid "28d85bc8-8ec4-4c76-bf2e-9c6916ad5f9d")
-		)
-		(pin "14"
-			(uuid "759978a8-08ea-41bb-baea-b3526099c679")
-		)
-		(pin "15"
-			(uuid "b61d72e1-8176-413b-a9ac-db2d46229e99")
-		)
-		(pin "16"
-			(uuid "4e8e0e79-b33e-4d1f-bbf0-0ebb0d098485")
-		)
-		(pin "2"
-			(uuid "1b69b008-690d-4020-a625-d2df3fe7a7cb")
-		)
-		(pin "3"
-			(uuid "3330e3bc-6ea1-4941-ad89-e4e489961a8b")
-		)
-		(pin "4"
-			(uuid "fc1ddeb4-b01d-4654-84cb-e149a6b9fdc6")
-		)
-		(pin "5"
-			(uuid "0fc0394d-af2c-41cf-bc5d-6aec7b52c607")
-		)
-		(pin "6"
-			(uuid "e74948ba-64af-42be-994f-865ae5e3e0f8")
-		)
-		(pin "7"
-			(uuid "d218dc8b-f904-4db5-bf58-160ecfa55eaf")
-		)
-		(pin "8"
-			(uuid "188eed1e-91c4-48c7-9a60-18daaf80d4dd")
-		)
-		(pin "9"
-			(uuid "851ccd64-af4a-4ead-811f-b6380c3ffe64")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 76.2 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "226e3aba-b239-4873-bbb5-f1b958628197")
-		(property "Reference" "#PWR045"
-			(at 80.01 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 72.39 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "653e118c-7d97-4f66-ac7d-2ba106b06eab")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 177.8 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "23717e83-b352-40b7-9595-46fb067c077e")
-		(property "Reference" "#PWR09"
-			(at 177.8 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 177.8 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a74b651-fbb3-4aa5-a376-7e8d979dc246")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "feb6dcbd-6d56-47da-9d45-3b13552de734")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4980,7 +3305,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 69.088 67.31 90)
 			(effects
 				(font
@@ -5017,72 +3342,6 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 219.71 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25933f53-b82c-46e3-8922-fd68d5d29979")
-		(property "Reference" "#PWR014"
-			(at 219.71 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 219.71 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 219.71 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.71 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70d65e90-2f14-4256-b01f-f799df03cba1")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5158,184 +3417,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT595")
-		(at 219.71 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3172bf9e-7fbd-4913-b82e-a04616fd26bc")
-		(property "Reference" "U4"
-			(at 221.6659 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HCT595"
-			(at 221.6659 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 219.71 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf"
-			(at 219.71 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.71 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3eda10e7-0745-4e1e-9783-74a5856bc14f")
-		)
-		(pin "10"
-			(uuid "0fe03d99-30f7-4856-b1e2-e87582123418")
-		)
-		(pin "11"
-			(uuid "8124a4d5-118e-47ec-bff1-5944014b3c45")
-		)
-		(pin "12"
-			(uuid "9488495d-2138-46f7-a377-85cf696c4e3e")
-		)
-		(pin "13"
-			(uuid "4f29f743-d0ad-4926-8d81-2711035ae105")
-		)
-		(pin "14"
-			(uuid "05895e81-0c29-4e13-ae17-def08265d28e")
-		)
-		(pin "15"
-			(uuid "f8b55f17-bb5d-49ce-8c79-8a89fc341f96")
-		)
-		(pin "16"
-			(uuid "4453a118-c69f-4a0f-9763-21b634004144")
-		)
-		(pin "2"
-			(uuid "3a3000d0-f7c1-41ad-8e6b-a2633d5a1f5e")
-		)
-		(pin "3"
-			(uuid "77150a83-3164-4f7c-8d68-3d6344425465")
-		)
-		(pin "4"
-			(uuid "8ca3286c-7dfc-4f39-afa0-e7bf854cf8cd")
-		)
-		(pin "5"
-			(uuid "a94d8282-3580-4f5b-9181-689a02502e4e")
-		)
-		(pin "6"
-			(uuid "ea337ff5-5930-4750-944d-19dbd3070f15")
-		)
-		(pin "7"
-			(uuid "4e782357-ac22-40f8-80c9-30b51b22c5cb")
-		)
-		(pin "8"
-			(uuid "0ee3c2b6-cb70-4285-85ae-dfecf98ddaa5")
-		)
-		(pin "9"
-			(uuid "89afedb0-36e3-425e-8321-7d5e3f2e86db")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 209.55 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3697f8e6-4de7-4f46-a074-c53d3031b7cc")
-		(property "Reference" "#PWR060"
-			(at 209.55 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 209.55 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 209.55 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2ac1cd55-d56b-40ee-b8a7-47ba2df7b1c1")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 82.55 90.17 0)
 		(unit 1)
@@ -5396,72 +3477,6 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 251.46 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4083656b-6352-4b16-b65b-c2e3b1ebf406")
-		(property "Reference" "#PWR061"
-			(at 251.46 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 251.46 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 251.46 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 251.46 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 251.46 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "27e75aac-7e96-47c9-8815-7a3ec7569b7f")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -5667,349 +3682,6 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 116.84 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4fe059e6-be99-4a00-98cb-bb1e45bb19e4")
-		(property "Reference" "#PWR042"
-			(at 116.84 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 116.84 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 116.84 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ea66c9d8-e1a2-4735-8869-b548a20e89be")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 104.14 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5098ef9b-89c9-41b1-b7b0-387c209aeb20")
-		(property "Reference" "C15"
-			(at 107.95 25.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 107.95 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 105.1052 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 104.14 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "baeff26a-9fd1-4727-8187-0f0596997e38")
-		)
-		(pin "1"
-			(uuid "6c71e8bb-88e9-4276-a189-a2cfcd5dea74")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 219.71 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5221f62e-e2f9-4dc3-b4e1-5543f7399b45")
-		(property "Reference" "#PWR010"
-			(at 219.71 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 219.71 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 219.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.71 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f217f130-f4d9-49ce-aa0b-7602e88f1570")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Ti:REG1117-3.3")
-		(at 76.2 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5abe297b-0656-4409-98bd-31e1d07fb8fb")
-		(property "Reference" "U11"
-			(at 132.08 42.418 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "REG1117-3.3"
-			(at 92.456 42.418 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "DCY4"
-			(at 76.2 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "REG1117-3.3"
-			(at 76.2 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c2a9219-a53e-46d7-9ef8-fc00bba68326")
-		)
-		(pin "2"
-			(uuid "93b819cb-f9bc-48d5-9edc-45148a64f8e3")
-		)
-		(pin "3"
-			(uuid "6018a6f7-6d16-4805-ad63-f86f3600d022")
-		)
-		(pin "4"
-			(uuid "aa9b35b2-70a8-4750-8269-508572cc891c")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "U11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 261.62 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f72a7f6-2785-4e8d-8f3f-b9b2e56f809d")
-		(property "Reference" "#PWR011"
-			(at 261.62 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 261.62 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29e2c878-47c8-43c0-af91-0fef8a9fba74")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
 		(at 67.31 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6101,7 +3773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Espressif:ESP32-S3-WROOM-2"
+		(property "Footprint" "RF_Module:ESP32-S3-WROOM-1"
 			(at 85.09 179.07 0)
 			(effects
 				(font
@@ -6120,6 +3792,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 82.55 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C2913202"
 			(at 82.55 130.81 0)
 			(effects
 				(font
@@ -6261,72 +3942,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 261.62 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b5eb4c3-09d4-4e90-91aa-e9907446e88f")
-		(property "Reference" "#PWR015"
-			(at 261.62 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 261.62 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 261.62 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "86bc2684-8513-45d5-9b9a-502f1b9e88ec")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Omron_B3FS")
 		(at 133.35 110.49 0)
 		(unit 1)
@@ -6388,76 +4003,6 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 116.84 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "740ad9c1-b72b-46a8-b348-cf560873471f")
-		(property "Reference" "C13"
-			(at 120.65 25.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 120.65 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 117.8052 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 116.84 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a060c8fc-fd74-4857-a9c9-c61e3961a2af")
-		)
-		(pin "1"
-			(uuid "56490053-9daf-4bdb-9d80-a2f03dc215ec")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -6709,73 +4254,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 142.24 45.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ec92f69-eb07-447f-9f78-3340a1146f47")
-		(property "Reference" "#PWR046"
-			(at 138.43 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 146.05 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "acdabdfe-99c8-4b66-a6b1-c6d94596fd54")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 128.27 97.79 270)
 		(unit 1)
@@ -6836,204 +4314,6 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 177.8 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95ccfe27-d0fa-4429-8c50-fe3f2d5f2624")
-		(property "Reference" "#PWR013"
-			(at 177.8 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 177.8 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17a11dd8-3dc5-4f9f-8cf0-55c3c9443716")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 167.64 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96504df2-d09a-4713-b9ce-f1108ad81fe4")
-		(property "Reference" "#PWR059"
-			(at 167.64 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.64 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df73189b-fd7d-435b-a522-cfc980f548ba")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 130.81 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9808e4c2-e9df-4f98-88d6-ec5859728e34")
-		(property "Reference" "#PWR04"
-			(at 130.81 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 130.81 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29eec2dc-4963-4e26-a986-3655b70685ec")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -7264,7 +4544,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 50.8 36.068 90)
 			(effects
 				(font
@@ -7307,251 +4587,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT595")
-		(at 177.8 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd54830d-b67e-473e-84c8-caa8c4497a23")
-		(property "Reference" "U3"
-			(at 179.7559 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HCT595"
-			(at 179.7559 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf"
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d34cfd06-fd27-4029-897e-80497131a550")
-		)
-		(pin "10"
-			(uuid "c75dcc84-15f7-4ce5-bd8e-a93702625489")
-		)
-		(pin "11"
-			(uuid "2826c15c-71fc-4056-8d63-bf125a34366a")
-		)
-		(pin "12"
-			(uuid "6575b32d-ee5f-4b44-b092-92af4b97adfc")
-		)
-		(pin "13"
-			(uuid "2a7108a8-1761-4a87-9d5b-0fa60363943d")
-		)
-		(pin "14"
-			(uuid "443ec61f-45e7-4ad0-b9ef-66f9a5fd80db")
-		)
-		(pin "15"
-			(uuid "81c2c724-c5f8-4bc9-b17b-483af318718d")
-		)
-		(pin "16"
-			(uuid "a02dac3f-0644-4fdc-b2c9-083fad294242")
-		)
-		(pin "2"
-			(uuid "c138d948-a46c-4ae8-9f21-403753881781")
-		)
-		(pin "3"
-			(uuid "a971f9a6-3c0a-475f-9f20-93b6e53ec7f9")
-		)
-		(pin "4"
-			(uuid "a7444a04-ef9b-40f0-8fa0-f022f7a5a620")
-		)
-		(pin "5"
-			(uuid "fb5d46f2-f87c-416b-b82b-e53ef998d620")
-		)
-		(pin "6"
-			(uuid "4dc12cf9-bb7f-40cc-8408-6cd620bf2c0e")
-		)
-		(pin "7"
-			(uuid "afa3b8de-66eb-4c05-a47f-53f73494416e")
-		)
-		(pin "8"
-			(uuid "a530aba8-4869-4716-aa4e-250d23358bc8")
-		)
-		(pin "9"
-			(uuid "12a5f79c-c41d-414a-9b94-c68b0aacd41e")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 142.24 48.26 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd5d82f1-1cb4-4a35-a0ea-58f0e730b1a6")
-		(property "Reference" "#PWR047"
-			(at 138.43 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 146.05 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "61492b04-c0e7-4bb8-9e75-02904a0e1f91")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 104.14 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf30895e-52dd-4331-91a0-135fdb6d8702")
-		(property "Reference" "#PWR066"
-			(at 104.14 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 104.14 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3f2b7af9-71e8-4d53-a99f-25f13c1c6ad2")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 67.31 76.2 0)
 		(unit 1)
@@ -7579,7 +4614,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 68.2752 80.01 0)
 			(effects
 				(font
@@ -7623,275 +4658,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 137.16 26.67 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c72b589f-2541-48e5-90e9-6367b875b33f")
-		(property "Reference" "R1"
-			(at 137.16 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5K1"
-			(at 137.16 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 137.16 28.448 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 137.16 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02989c8d-e2b3-4a10-bff1-6d9f557c1e18")
-		)
-		(pin "2"
-			(uuid "d5250762-dc1a-4d69-8e2a-e6c6fd99bda4")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 104.14 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c994201e-3c27-4b7e-b506-d92b7e7a3066")
-		(property "Reference" "#PWR065"
-			(at 104.14 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 104.14 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 104.14 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2611527a-be8a-48d9-91f5-b933165b1e3c")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 209.55 49.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc8695c6-935e-44b5-809d-26d0e43217e9")
-		(property "Reference" "#PWR062"
-			(at 213.36 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 205.74 49.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 209.55 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d56b3543-8165-4ce8-aa68-bd003de924a2")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 45.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d85a625a-91bd-451d-b6dd-98b7b8c62a62")
-		(property "Reference" "#PWR044"
-			(at 69.85 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 72.39 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b02f8d8-db2d-45f9-8fb9-f1930a4cb72c")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 50.8 31.75 270)
 		(mirror x)
 		(unit 1)
@@ -7916,7 +4682,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 50.8 33.528 90)
 			(effects
 				(font
@@ -8024,142 +4790,9 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 116.84 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eee0378c-1e98-4a2f-bd8d-0ea9ceae479d")
-		(property "Reference" "#PWR049"
-			(at 116.84 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 116.84 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f8b16f1f-42a2-4323-9213-5c29fb8265ae")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 167.64 49.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc8c96fb-226b-4980-a7bf-5501163bb6cb")
-		(property "Reference" "#PWR063"
-			(at 171.45 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 163.83 49.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "90e60663-8dc4-42c4-861d-3ca6b09fb73f")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
-		(at 208.28 130.81)
-		(size 20.32 20.32)
+		(at 215.9 101.6)
+		(size 20.32 16.51)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -8168,225 +4801,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "05e9618e-aa58-4551-9572-71bb254b65fe")
-		(property "Sheetname" "Driver 5"
-			(at 208.28 130.0984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "driver.kicad_sch"
-			(at 208.28 151.7146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "IN1" input
-			(at 208.28 133.35 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2713301b-339c-4b17-b497-8644111375d9")
-		)
-		(pin "IN2" input
-			(at 208.28 135.89 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "37f09c30-06c6-437b-8383-5c84a03a89e0")
-		)
-		(pin "IN3" input
-			(at 208.28 138.43 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7a79c98a-d784-4523-8d05-bbe4e9010ec0")
-		)
-		(pin "SDA" input
-			(at 208.28 146.05 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b3389c86-1fa7-4a47-921f-1fbc61dbbdbd")
-		)
-		(pin "SCL" input
-			(at 208.28 148.59 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "df324bcd-55d1-42b6-904c-f0b9503a4daa")
-		)
-		(pin "IN4" input
-			(at 208.28 140.97 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b62431c2-f01c-4927-8377-8f71b7eff656")
-		)
-		(pin "nFAULT" input
-			(at 228.6 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "abf81a20-3545-4591-aa02-8fe50c6116b1")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 247.65 99.06)
-		(size 20.32 20.32)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "0c6616b8-caea-49f5-b1bd-ac3cf2086059")
-		(property "Sheetname" "Driver 3"
-			(at 247.65 98.3484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "driver.kicad_sch"
-			(at 247.65 119.9646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "IN1" input
-			(at 247.65 101.6 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b2ca0041-c7a8-4c04-8ed9-9f0ae066a84c")
-		)
-		(pin "IN2" input
-			(at 247.65 104.14 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e116fecc-4b88-41eb-93a2-ff16f4385e66")
-		)
-		(pin "IN3" input
-			(at 247.65 106.68 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "79ffcf66-34a2-430a-b649-eeb18acf22f2")
-		)
-		(pin "SDA" input
-			(at 247.65 114.3 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "988b3882-f71d-4fa6-916f-75f72bf7961d")
-		)
-		(pin "SCL" input
-			(at 247.65 116.84 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "3e367817-9a78-49bc-9b29-8f610433e6b9")
-		)
-		(pin "IN4" input
-			(at 247.65 109.22 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2a9990c7-51f7-4e38-aa08-b291932a51eb")
-		)
-		(pin "nFAULT" input
-			(at 267.97 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "6d0515ee-4667-45f3-a174-ca14596ccf74")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 208.28 99.06)
-		(size 20.32 20.32)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "29a04980-63c5-4978-874d-4740cc9009e0")
+		(uuid "2c530d14-1ef3-4f14-904d-5a3fc613eb72")
 		(property "Sheetname" "Driver 2"
-			(at 208.28 98.3484 0)
+			(at 215.9 100.8884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8395,7 +4812,7 @@
 			)
 		)
 		(property "Sheetfile" "driver.kicad_sch"
-			(at 208.28 119.9646 0)
+			(at 215.9 118.6946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8403,75 +4820,65 @@
 				(justify left top)
 			)
 		)
-		(pin "IN1" input
-			(at 208.28 101.6 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "13c9e95e-14a6-433b-a8c2-a0cd74c3bd6f")
-		)
-		(pin "IN2" input
-			(at 208.28 104.14 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b9fc0514-1eca-4e61-bac3-fddf0cc58b8d")
-		)
-		(pin "IN3" input
-			(at 208.28 106.68 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f1540238-5cf7-4b99-8756-5ab16990d806")
-		)
-		(pin "SDA" input
-			(at 208.28 114.3 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "109295df-90fd-4bc9-944a-05dbdc45c8a8")
-		)
-		(pin "SCL" input
-			(at 208.28 116.84 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "4d789427-4a96-485a-88c8-1c4f6d93c2a6")
-		)
-		(pin "IN4" input
-			(at 208.28 109.22 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "5e701cc5-bcf6-4d0c-a6d0-59cc0e665800")
-		)
 		(pin "nFAULT" input
-			(at 228.6 101.6 0)
+			(at 236.22 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e4badc7d-412b-4aad-a68b-1065295e54a2")
+			(uuid "f8788f81-6926-466f-a3a2-b106ff03461f")
+		)
+		(pin "nSLEEP" input
+			(at 215.9 115.57 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c3d5b2f6-88cd-4f1d-8491-cc82cf12ec13")
+		)
+		(pin "nCS" input
+			(at 215.9 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d39e29ea-a014-4177-bb14-bc86e5aeddb2")
+		)
+		(pin "SCK" input
+			(at 215.9 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7f2ee0ac-be03-4a63-b341-7af9b6791adb")
+		)
+		(pin "SIN" input
+			(at 215.9 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "96d2a09e-3e39-4a7e-bb01-1303f8a70e5d")
+		)
+		(pin "SOUT" input
+			(at 215.9 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2908a554-1db8-4bbd-a26b-8015d4973b38")
 		)
 		(instances
 			(project "HapticDriver"
@@ -8482,8 +4889,8 @@
 		)
 	)
 	(sheet
-		(at 168.91 130.81)
-		(size 20.32 20.32)
+		(at 222.25 53.34)
+		(size 27.94 15.24)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -8492,9 +4899,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "c8f9c662-da48-4f16-b16c-f400a4a5d639")
-		(property "Sheetname" "Driver 4"
-			(at 168.91 130.0984 0)
+		(uuid "4262f137-edaa-4c78-9028-09593ec67ff5")
+		(property "Sheetname" "Power"
+			(at 222.25 52.6284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8502,8 +4909,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "driver.kicad_sch"
-			(at 168.91 151.7146 0)
+		(property "Sheetfile" "power_reg.kicad_sch"
+			(at 222.25 69.1646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8511,75 +4918,73 @@
 				(justify left top)
 			)
 		)
-		(pin "IN1" input
-			(at 168.91 133.35 180)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 173.99 68.58)
+		(size 17.78 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b3e69e2e-4dc8-4887-b929-c22fdd8d84cb")
+		(property "Sheetname" "Audio"
+			(at 173.99 67.8684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 173.99 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 173.99 72.39 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ac2b54dd-4b9a-486d-80e8-87604c52ddff")
+			(uuid "88987be1-4a1f-4405-8c7b-ed65f54b5332")
 		)
-		(pin "IN2" input
-			(at 168.91 135.89 180)
+		(pin "BCLK" input
+			(at 173.99 74.93 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "041c127e-b06f-40e5-9715-e8f946be075b")
+			(uuid "3d5ffc72-296a-4fb7-b86f-f10760afb661")
 		)
-		(pin "IN3" input
-			(at 168.91 138.43 180)
+		(pin "LRCLK" input
+			(at 173.99 77.47 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fc3f6fc9-b018-4cd8-ac9a-8b39654bf9dc")
-		)
-		(pin "SDA" input
-			(at 168.91 146.05 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "07225178-cc30-49b7-8ad3-288cfd122647")
-		)
-		(pin "SCL" input
-			(at 168.91 148.59 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "5c057d14-3f9b-426b-a8ea-b5b4003c69c8")
-		)
-		(pin "IN4" input
-			(at 168.91 140.97 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e34984d5-b4dd-4bd4-9902-188e656e1d20")
-		)
-		(pin "nFAULT" input
-			(at 189.23 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "8c320e5b-8367-48a9-9dfc-dfa282a1c9b7")
+			(uuid "db95523b-3867-4426-8b73-c082333feb06")
 		)
 		(instances
 			(project "HapticDriver"
@@ -8590,8 +4995,8 @@
 		)
 	)
 	(sheet
-		(at 168.91 99.06)
-		(size 20.32 20.32)
+		(at 172.72 101.6)
+		(size 20.32 16.51)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -8602,7 +5007,7 @@
 		)
 		(uuid "e20c0ed8-6e50-4d86-9157-9aa2e157c95b")
 		(property "Sheetname" "Driver 1"
-			(at 168.91 98.3484 0)
+			(at 172.72 100.8884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8611,7 +5016,7 @@
 			)
 		)
 		(property "Sheetfile" "driver.kicad_sch"
-			(at 168.91 119.9646 0)
+			(at 172.72 118.6946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8619,68 +5024,8 @@
 				(justify left top)
 			)
 		)
-		(pin "IN1" input
-			(at 168.91 101.6 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "672e04cc-fe7a-4bd1-ae8b-3afea6fdf8cc")
-		)
-		(pin "IN2" input
-			(at 168.91 104.14 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2b45d463-14cf-44a6-ae0e-caaa4f1f4ef6")
-		)
-		(pin "IN3" input
-			(at 168.91 106.68 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "5f499a49-fe37-435f-84cb-7d3844c54585")
-		)
-		(pin "SDA" input
-			(at 168.91 114.3 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "60552f38-fe9d-44bf-a2bf-d9ca563c0e07")
-		)
-		(pin "SCL" input
-			(at 168.91 116.84 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "25007b24-6d75-42e1-84fd-4be71021c470")
-		)
-		(pin "IN4" input
-			(at 168.91 109.22 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6d252721-eb83-4b4e-a2f3-bb35ce47901d")
-		)
 		(pin "nFAULT" input
-			(at 189.23 101.6 0)
+			(at 193.04 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8689,118 +5034,60 @@
 			)
 			(uuid "ba836be4-7ceb-4549-b0e5-30b490b6bd38")
 		)
+		(pin "nSLEEP" input
+			(at 172.72 115.57 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5b93811a-a830-4997-bced-04ad0fb70624")
+		)
+		(pin "nCS" input
+			(at 172.72 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "11484d10-7732-4c1c-a9cc-54196096bbe3")
+		)
+		(pin "SCK" input
+			(at 172.72 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "830b7aeb-b916-42b0-a09a-050c573e5567")
+		)
+		(pin "SIN" input
+			(at 172.72 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "293c5006-1cd6-4a36-9164-f0239cabafae")
+		)
+		(pin "SOUT" input
+			(at 172.72 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5791b103-4806-4805-9ed0-67a7d8eb2b72")
+		)
 		(instances
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 247.65 130.81)
-		(size 20.32 20.32)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "fe572b08-4318-4031-8c18-eb3a7fa1b231")
-		(property "Sheetname" "Driver 6"
-			(at 247.65 130.0984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "driver.kicad_sch"
-			(at 247.65 151.7146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "IN1" input
-			(at 247.65 133.35 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "05b196c8-e462-4e30-a9ca-4aa16804e63a")
-		)
-		(pin "IN2" input
-			(at 247.65 135.89 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "93281b43-1969-4d07-bd3b-540b109311de")
-		)
-		(pin "IN3" input
-			(at 247.65 138.43 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d5b23a09-135d-4eec-bc5d-98cc018d2bb6")
-		)
-		(pin "SDA" input
-			(at 247.65 146.05 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "0035f109-54bb-4c74-86b9-35df2c3abda5")
-		)
-		(pin "SCL" input
-			(at 247.65 148.59 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "fc204bf3-4425-444e-bc7e-9487de005b12")
-		)
-		(pin "IN4" input
-			(at 247.65 140.97 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "650f6f95-7748-4f99-b515-3c780346ef03")
-		)
-		(pin "nFAULT" input
-			(at 267.97 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "26dce8ed-f7cb-43b2-914e-44c5e3fe81ed")
-		)
-		(instances
-			(project "HapticDriver"
-				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
-					(page "7")
 				)
 			)
 		)
