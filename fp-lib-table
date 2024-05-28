@@ -3,4 +3,6 @@
   (lib (name "Ti")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Ti.pretty")(options "")(descr ""))
   (lib (name "Button_Omron")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Omron.pretty")(options "")(descr ""))
   (lib (name "Changjiang")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Changjiang.pretty")(options "")(descr ""))
+  (lib (name "AnalogDevices")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AnalogDevices.pretty")(options "")(descr ""))
+  (lib (name "SolderWires")(type "KiCad")(uri "${KIPRJMOD}/Footprints/SolderWires.pretty")(options "")(descr ""))
 )

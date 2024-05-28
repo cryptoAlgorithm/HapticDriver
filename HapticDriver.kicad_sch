@@ -273,7 +273,7 @@
 				)
 			)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -281,21 +281,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -10.16 19.05 0)
+				(at 0 22.225 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0"
-				(at 19.05 19.05 0)
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
+				(at 0 19.685 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Footprint" ""
@@ -316,7 +314,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -343,7 +341,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -455,7 +453,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -656,7 +654,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -1063,6 +1061,164 @@
 				)
 			)
 			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -2552,14 +2708,6 @@
 		(uuid "8028b47d-121d-46a7-a450-afd721f2776a")
 	)
 	(no_connect
-		(at 128.27 113.03)
-		(uuid "171ac4d1-9ed2-45a3-8f31-b24fcb3224de")
-	)
-	(no_connect
-		(at 128.27 115.57)
-		(uuid "365ae5b4-862a-4f12-978f-dde73d89ce55")
-	)
-	(no_connect
 		(at 46.99 54.61)
 		(uuid "37cb0493-d6b9-488a-8fe9-28809575739d")
 	)
@@ -2568,24 +2716,12 @@
 		(uuid "39497106-f679-484b-a1a5-34168a7d91bd")
 	)
 	(no_connect
-		(at 128.27 163.83)
-		(uuid "5017afd8-ed68-4e31-a338-4bb64458030b")
-	)
-	(no_connect
-		(at 128.27 118.11)
-		(uuid "6755337e-672f-4a07-b3fa-34f31bc6f5a6")
-	)
-	(no_connect
 		(at 36.83 113.03)
 		(uuid "69d5d49f-d7ab-45e8-92a1-ec2ebcfcc69f")
 	)
 	(no_connect
 		(at 46.99 57.15)
 		(uuid "6d9b18e5-43a2-44b0-ade3-fdc08f0dc6a7")
-	)
-	(no_connect
-		(at 128.27 166.37)
-		(uuid "708ffece-eff1-4031-bc25-7043b574dc67")
 	)
 	(no_connect
 		(at 46.99 26.67)
@@ -2602,10 +2738,6 @@
 	(no_connect
 		(at 36.83 115.57)
 		(uuid "accb376a-6136-4ca6-88e5-259f6b4dbe51")
-	)
-	(no_connect
-		(at 128.27 156.21)
-		(uuid "b61285a0-de8d-4c3f-8ba5-26b1ffc96be5")
 	)
 	(no_connect
 		(at 36.83 102.87)
@@ -2777,6 +2909,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 110.49) (xy 128.27 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c524902-f8cd-4144-95bf-eff3caafba2d")
+	)
+	(wire
+		(pts
 			(xy 67.31 82.55) (xy 67.31 81.28)
 		)
 		(stroke
@@ -2784,16 +2926,6 @@
 			(type default)
 		)
 		(uuid "abb3abd7-bdc4-4ae0-a524-6be89187145f")
-	)
-	(wire
-		(pts
-			(xy 140.97 110.49) (xy 138.43 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c11051b6-8733-4b89-b248-a6d6fcaad1ea")
 	)
 	(wire
 		(pts
@@ -2949,6 +3081,17 @@
 		)
 		(uuid "0b1004e8-78f5-43d4-bd3d-a6558145b5f7")
 	)
+	(label "I2S_DIN"
+		(at 128.27 156.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "18fb50bb-ca96-4cca-b4fd-6d0a55eacf50")
+	)
 	(label "USB_DM"
 		(at 128.27 105.41 0)
 		(fields_autoplaced yes)
@@ -2959,17 +3102,6 @@
 			(justify left bottom)
 		)
 		(uuid "1f6dff60-f27a-498a-88a3-06dbda5df785")
-	)
-	(label "DRV_MOSI"
-		(at 128.27 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1fb2fff9-fef3-4dbf-98cb-d145ae415885")
 	)
 	(label "DRV_MISO"
 		(at 172.72 104.14 180)
@@ -3016,7 +3148,7 @@
 		(uuid "40c620e9-42f0-4ec6-8c53-104b9b239dd0")
 	)
 	(label "nFAULT_1"
-		(at 128.27 130.81 0)
+		(at 128.27 135.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3024,29 +3156,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4a70b1b8-8e18-4ce0-b740-c02458bebd3d")
-	)
-	(label "DRV_SCL"
-		(at 128.27 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4c887fa6-de49-4a34-931c-343acd1838f2")
-	)
-	(label "DRV_MISO"
-		(at 128.27 148.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4d5459ca-1825-4409-92c2-efe13dc39f6b")
+		(uuid "46fd8ff8-3ed5-43e5-8b39-b8f989c65148")
 	)
 	(label "DRV_CS_2"
 		(at 215.9 111.76 180)
@@ -3070,6 +3180,17 @@
 		)
 		(uuid "566a5a55-7d78-4333-9fe5-1bff02127d5d")
 	)
+	(label "DRV_MISO"
+		(at 128.27 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64696351-e8ea-41a3-82d2-1c147c4e46f7")
+	)
 	(label "nFAULT_2"
 		(at 236.22 104.14 0)
 		(fields_autoplaced yes)
@@ -3092,19 +3213,8 @@
 		)
 		(uuid "6ae66e76-1d53-4f81-b6a8-b331bd1a8141")
 	)
-	(label "DRV_CS_2"
-		(at 128.27 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6cf9cb3d-e22d-4211-9aba-cbc00ed05230")
-	)
 	(label "DRV_CS_1"
-		(at 128.27 133.35 0)
+		(at 128.27 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3112,7 +3222,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7ee38239-eabd-4cee-849c-96aea6da6445")
+		(uuid "7bcf14e2-c7c3-4039-97b2-2fda3757456a")
+	)
+	(label "DRV_CS_2"
+		(at 128.27 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "80978373-71a9-4aef-bfe3-1a48ce5609ae")
 	)
 	(label "DRV_MOSI"
 		(at 215.9 106.68 180)
@@ -3125,8 +3246,8 @@
 		)
 		(uuid "833407f7-021d-487a-9d43-e7e210249d0e")
 	)
-	(label "nFAULT_2"
-		(at 128.27 151.13 0)
+	(label "I2S_WCLK"
+		(at 128.27 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3134,29 +3255,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8d87bfce-6453-4435-bb26-bd2ba8dc7c2b")
-	)
-	(label "DRV_SCK"
-		(at 128.27 120.65 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a067089a-aefe-4e47-9ef0-171741dc4c16")
-	)
-	(label "DRV_SDA"
-		(at 128.27 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a3d07ef5-1586-4c0a-a9a3-ad47a7d11c4c")
+		(uuid "852a6768-73d0-4f0b-9b20-9fac74eee446")
 	)
 	(label "DRV_MOSI"
 		(at 172.72 106.68 180)
@@ -3169,8 +3268,8 @@
 		)
 		(uuid "a828f9b4-0daf-4559-86d0-751be65f9a27")
 	)
-	(label "I2S_DIN"
-		(at 128.27 138.43 0)
+	(label "I2S_BCLK"
+		(at 128.27 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3178,7 +3277,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b4d80afd-27ec-4980-b87d-e64f0928b1c7")
+		(uuid "aac531e6-7c78-4fce-a0f2-dfd170009ce7")
+	)
+	(label "DRV_MOSI"
+		(at 128.27 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3c1fecd-085b-40c2-9f5e-2c6cb88e10a1")
 	)
 	(label "DRV_CS_1"
 		(at 172.72 111.76 180)
@@ -3202,8 +3312,8 @@
 		)
 		(uuid "b5ee96c6-948b-45d3-b03b-c4aacd33022c")
 	)
-	(label "I2S_WCLK"
-		(at 128.27 143.51 0)
+	(label "DRV_CMD_2"
+		(at 128.27 163.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3211,7 +3321,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "bd811cc4-3e01-4671-89cf-70ed474c7af8")
+		(uuid "c0af3ef2-028c-45c5-a280-4f64ce3922ba")
 	)
 	(label "I2S_DIN"
 		(at 173.99 72.39 180)
@@ -3224,6 +3334,28 @@
 		)
 		(uuid "c57efc5c-36d6-449c-8d26-648c91119b96")
 	)
+	(label "DRV_CMD_2"
+		(at 215.9 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c59a3a3f-f159-40ee-a7bf-316fe03e0494")
+	)
+	(label "DRV_CMD_1"
+		(at 172.72 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c99063bf-bf13-4f14-96de-da94394f35a2")
+	)
 	(label "USB_DP"
 		(at 49.53 45.72 0)
 		(fields_autoplaced yes)
@@ -3235,6 +3367,17 @@
 		)
 		(uuid "cd2af6db-531a-4d37-bb27-f3a0151f0e7e")
 	)
+	(label "nFAULT_2"
+		(at 128.27 166.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf025040-c3c7-403f-b0a1-2672196ea5f2")
+	)
 	(label "nFAULT_1"
 		(at 193.04 104.14 0)
 		(fields_autoplaced yes)
@@ -3245,6 +3388,28 @@
 			(justify left bottom)
 		)
 		(uuid "dfe1441b-796b-482c-8c06-a007223fd0f9")
+	)
+	(label "DRV_SCK"
+		(at 128.27 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2729fc0-1f4b-460d-ae93-a7a1aa6c0957")
+	)
+	(label "DRV_CMD_1"
+		(at 128.27 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f532b074-fd3f-4f63-add0-57f233de7c88")
 	)
 	(label "USB_DM"
 		(at 49.53 40.64 0)
@@ -3268,16 +3433,150 @@
 		)
 		(uuid "fc6f846f-3e41-4e41-8628-2a80aa8be918")
 	)
-	(label "I2S_BCLK"
-		(at 128.27 140.97 0)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 115.57 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "1e10e4c0-9cf1-4dc1-b3c3-82101508d59e")
+		(property "Reference" "C18"
+			(at 119.38 25.7809 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
-			(justify left bottom)
 		)
-		(uuid "feb6dcbd-6d56-47da-9d45-3b13552de734")
+		(property "Value" "10uF"
+			(at 119.38 28.3209 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
+			(at 116.5352 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C3001227"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ccfe1e85-19b9-423b-93d0-86d667c48544")
+		)
+		(pin "1"
+			(uuid "dbd76b9a-5c71-4cbf-885e-1fc99badd9c6")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 115.57 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20fb5619-495d-4ec7-aaea-13ab3ac803b7")
+		(property "Reference" "#PWR019"
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f27724ba-fa72-4770-93d5-b67ec22b220b")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -3374,7 +3673,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-1.5sqmm_1x02_P6mm_D1.7mm_OD3mm"
+		(property "Footprint" "Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm"
 			(at 87.63 26.67 0)
 			(effects
 				(font
@@ -3411,6 +3710,72 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 115.57 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c0d9655-49c1-4a88-ad8b-08bf48ebbb26")
+		(property "Reference" "#PWR018"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 115.57 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fac1a78-6def-4096-858f-53810ede2305")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -3484,7 +3849,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.97 110.49 0)
+		(at 146.05 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3493,7 +3858,7 @@
 		(fields_autoplaced yes)
 		(uuid "40ddfa1a-ea62-4c4e-8d7c-2a36fe0149b4")
 		(property "Reference" "#PWR050"
-			(at 140.97 116.84 0)
+			(at 152.4 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3502,15 +3867,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.97 115.57 0)
+			(at 149.86 110.4899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 110.49 0)
+			(at 146.05 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3519,7 +3885,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 110.49 0)
+			(at 146.05 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3528,7 +3894,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 110.49 0)
+			(at 146.05 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3943,7 +4309,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Omron_B3FS")
-		(at 133.35 110.49 0)
+		(at 140.97 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3951,7 +4317,7 @@
 		(dnp no)
 		(uuid "7282f073-2b31-4ec8-bcd0-84369e4de5ce")
 		(property "Reference" "SW1"
-			(at 133.604 112.268 0)
+			(at 141.224 112.268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3959,7 +4325,7 @@
 			)
 		)
 		(property "Value" "BOOT"
-			(at 139.192 108.966 0)
+			(at 140.97 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3967,7 +4333,7 @@
 			)
 		)
 		(property "Footprint" "Button_Omron:SW_B3U-1000P"
-			(at 133.35 105.41 0)
+			(at 140.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3976,7 +4342,7 @@
 			)
 		)
 		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf"
-			(at 133.35 105.41 0)
+			(at 140.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3985,7 +4351,7 @@
 			)
 		)
 		(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
-			(at 133.35 110.49 0)
+			(at 140.97 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +4441,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0")
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 31.75 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4100,7 +4466,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
 			(at 35.56 41.91 0)
 			(effects
 				(font
@@ -4118,7 +4484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 31.75 41.91 0)
 			(effects
 				(font
@@ -4792,7 +5158,7 @@
 	)
 	(sheet
 		(at 215.9 101.6)
-		(size 20.32 16.51)
+		(size 20.32 19.05)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4812,7 +5178,7 @@
 			)
 		)
 		(property "Sheetfile" "driver.kicad_sch"
-			(at 215.9 118.6946 0)
+			(at 215.9 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4831,7 +5197,7 @@
 			(uuid "f8788f81-6926-466f-a3a2-b106ff03461f")
 		)
 		(pin "nSLEEP" input
-			(at 215.9 115.57 180)
+			(at 215.9 118.11 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4879,6 +5245,16 @@
 				(justify left)
 			)
 			(uuid "2908a554-1db8-4bbd-a26b-8015d4973b38")
+		)
+		(pin "CMD" input
+			(at 215.9 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5b6b548a-13a9-46f1-8372-3edfaae27075")
 		)
 		(instances
 			(project "HapticDriver"
@@ -4996,7 +5372,7 @@
 	)
 	(sheet
 		(at 172.72 101.6)
-		(size 20.32 16.51)
+		(size 20.32 19.05)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5016,7 +5392,7 @@
 			)
 		)
 		(property "Sheetfile" "driver.kicad_sch"
-			(at 172.72 118.6946 0)
+			(at 172.72 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5035,7 +5411,7 @@
 			(uuid "ba836be4-7ceb-4549-b0e5-30b490b6bd38")
 		)
 		(pin "nSLEEP" input
-			(at 172.72 115.57 180)
+			(at 172.72 118.11 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5083,6 +5459,16 @@
 				(justify left)
 			)
 			(uuid "5791b103-4806-4805-9ed0-67a7d8eb2b72")
+		)
+		(pin "CMD" input
+			(at 172.72 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "206b2375-25c9-44cf-84af-5606fdaea3fb")
 		)
 		(instances
 			(project "HapticDriver"
