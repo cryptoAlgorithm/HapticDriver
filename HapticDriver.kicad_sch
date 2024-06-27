@@ -1378,6 +1378,128 @@
 				)
 			)
 		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "PCM_Espressif:ESP32-S3-WROOM-2"
 			(pin_names
 				(offset 1.016)
@@ -2713,6 +2835,12 @@
 		(color 0 0 0 0)
 		(uuid "867dfa30-be6d-42d6-b467-435a14a95078")
 	)
+	(junction
+		(at 142.24 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecf59dec-77d7-44bb-b0e2-0b11e8e7f27b")
+	)
 	(no_connect
 		(at 128.27 120.65)
 		(uuid "07514bf3-af22-4a60-9ce4-8c92a543844e")
@@ -2736,10 +2864,6 @@
 	(no_connect
 		(at 46.99 57.15)
 		(uuid "6d9b18e5-43a2-44b0-ade3-fdc08f0dc6a7")
-	)
-	(no_connect
-		(at 128.27 128.27)
-		(uuid "7407873c-3616-4f14-aeb0-a82bf5ecd2db")
 	)
 	(no_connect
 		(at 46.99 26.67)
@@ -2810,6 +2934,16 @@
 			(type default)
 		)
 		(uuid "228e198e-aa72-45cc-9865-b5d8fecb8c01")
+	)
+	(wire
+		(pts
+			(xy 128.27 128.27) (xy 142.24 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23d6ca59-a3bf-4a71-a381-34d227b4fa50")
 	)
 	(wire
 		(pts
@@ -3084,25 +3218,6 @@
 			(type none)
 		)
 		(uuid 88ade481-4164-4a5b-9de5-ddb5fbf51078)
-	)
-	(text_box "Note: GPIO46 is a strapping pin, is pulled down and should be read as 0 on boot. Since nFAULT is open collector, this does not affect behaviour."
-		(exclude_from_sim no)
-		(at 140.97 160.02 0)
-		(size 33.02 11.43)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "5b79463b-ae73-478f-a729-ba2599a3b8f0")
 	)
 	(text_box "Strapping Pins\n\nGPIO0 - BOOT\nGPIO46 - Boot mode\nGPIO45 - VDD_SPI\nGPIO3 - JTAG Signal Source"
 		(exclude_from_sim no)
@@ -3643,6 +3758,76 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1491b9dc-93da-4ed6-ba0c-78ffdeeceb81")
+		(property "Reference" "R8"
+			(at 144.78 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 144.78 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ef45de5-f7d9-4b63-bb33-71b4c47c4584")
+		)
+		(pin "2"
+			(uuid "7e6f5f33-e4ce-4214-8197-83c358ba96ea")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4663,6 +4848,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 142.24 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "712487cf-4e6e-417d-af9f-912f5f741abb")
+		(property "Reference" "#PWR036"
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 142.24 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df6b9571-0d92-46a3-b869-34af0660d3aa")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Omron_B3FS")
 		(at 140.97 110.49 0)
 		(unit 1)
@@ -5261,6 +5512,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 142.24 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0261f2b-82af-41ba-8569-c0d73942e655")
+		(property "Reference" "#PWR035"
+			(at 142.24 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 142.24 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2176ecf-fcbf-4fc9-b915-37b4b14ebc57")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 67.31 76.2 0)
 		(unit 1)
@@ -5325,6 +5642,76 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb5472b7-6746-47f5-9899-14fe70f1bbfc")
+		(property "Reference" "R7"
+			(at 144.78 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 144.78 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 142.24 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 142.24 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ef45de5-f7d9-4b63-bb33-71b4c47c4584")
+		)
+		(pin "2"
+			(uuid "7e6f5f33-e4ce-4214-8197-83c358ba96ea")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9"
+					(reference "R7")
 					(unit 1)
 				)
 			)
