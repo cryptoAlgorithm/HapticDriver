@@ -2901,10 +2901,6 @@
 		(at 128.27 148.59)
 		(uuid "d34c3f35-06f9-451d-8c3b-6010c49bb3a0")
 	)
-	(no_connect
-		(at 36.83 110.49)
-		(uuid "fd5f9c4d-e019-4668-8a98-14f6fd464419")
-	)
 	(wire
 		(pts
 			(xy 148.59 30.48) (xy 151.13 30.48)
@@ -3411,6 +3407,17 @@
 		)
 		(uuid "566a5a55-7d78-4333-9fe5-1bff02127d5d")
 	)
+	(label "CODEC_MODE"
+		(at 191.77 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b483291-b199-4a14-8620-aa4890084d4c")
+	)
 	(label "DRV_MISO"
 		(at 128.27 138.43 0)
 		(fields_autoplaced yes)
@@ -3675,6 +3682,17 @@
 		)
 		(uuid "f532b074-fd3f-4f63-add0-57f233de7c88")
 	)
+	(label "CODEC_MODE"
+		(at 36.83 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f8fa279f-55ce-456d-a583-2961059ef0a0")
+	)
 	(label "USB_DM"
 		(at 49.53 40.64 0)
 		(fields_autoplaced yes)
@@ -3782,7 +3800,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "1K"
 			(at 144.78 132.0799 0)
 			(effects
 				(font
@@ -3810,6 +3828,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C11702"
 			(at 142.24 130.81 0)
 			(effects
 				(font
@@ -4101,6 +4128,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C2889415"
+			(at 67.31 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7e2603ab-bd8c-497b-b670-e021b383b447")
 		)
@@ -4121,7 +4157,7 @@
 		(at 87.63 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2ce0e11c-2f2b-4167-aee1-93fe90ada26b")
@@ -4832,6 +4868,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C11702"
+			(at 146.05 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "43446434-07f5-496c-bb9f-e998df8ea811")
 		)
@@ -4855,7 +4900,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "712487cf-4e6e-417d-af9f-912f5f741abb")
 		(property "Reference" "#PWR036"
 			(at 142.24 127 0)
@@ -4867,7 +4911,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 142.24 118.11 0)
+			(at 142.24 118.872 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4938,7 +4982,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Omron:SW_B3U-1000P"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
 			(at 140.97 105.41 0)
 			(effects
 				(font
@@ -4947,7 +4991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf"
+		(property "Datasheet" ""
 			(at 140.97 105.41 0)
 			(effects
 				(font
@@ -4956,7 +5000,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
+		(property "Description" ""
+			(at 140.97 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C318884"
 			(at 140.97 110.49 0)
 			(effects
 				(font
@@ -5117,7 +5170,7 @@
 		(at 128.27 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "939b09f3-a431-40ca-a82b-d4bc4e8d34c7")
@@ -5130,7 +5183,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RXD"
+		(property "Value" "RX"
 			(at 136.652 97.79 90)
 			(effects
 				(font
@@ -5203,7 +5256,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Omron:SW_B3U-1000P"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
 			(at 55.88 76.2 0)
 			(effects
 				(font
@@ -5212,7 +5265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf"
+		(property "Datasheet" ""
 			(at 55.88 76.2 0)
 			(effects
 				(font
@@ -5221,7 +5274,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
+		(property "Description" ""
+			(at 60.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C318884"
 			(at 60.96 76.2 0)
 			(effects
 				(font
@@ -5496,6 +5558,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C2889415"
+			(at 50.8 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "64bea43e-b26b-437c-a90b-e9f0193374e3")
 		)
@@ -5632,6 +5703,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C96446"
+			(at 67.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0e570313-64ba-4448-9f99-7c6348a4a443")
 		)
@@ -5666,7 +5746,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "16K"
 			(at 144.78 126.9999 0)
 			(effects
 				(font
@@ -5702,11 +5782,20 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C543609"
+			(at 142.24 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "5ef45de5-f7d9-4b63-bb33-71b4c47c4584")
+			(uuid "5ef45de5-f7d9-4b63-bb33-71b4c47c4585")
 		)
 		(pin "2"
-			(uuid "7e6f5f33-e4ce-4214-8197-83c358ba96ea")
+			(uuid "7e6f5f33-e4ce-4214-8197-83c358ba96eb")
 		)
 		(instances
 			(project "HapticDriver"
@@ -5762,6 +5851,15 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 31.75 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C2988369"
 			(at 31.75 41.91 0)
 			(effects
 				(font
@@ -5883,6 +5981,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C2889415"
+			(at 50.8 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "942df9c9-f93c-4e6d-b841-167f3b3a1299")
 		)
@@ -5903,7 +6010,7 @@
 		(at 128.27 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "eeb2b117-77e6-4bcf-b5e7-83c57597714e")
@@ -5916,7 +6023,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TXD"
+		(property "Value" "TX"
 			(at 136.652 95.25 90)
 			(effects
 				(font
@@ -6169,6 +6276,16 @@
 				(justify left)
 			)
 			(uuid "db95523b-3867-4426-8b73-c082333feb06")
+		)
+		(pin "MODE" input
+			(at 191.77 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2f886211-c270-4359-876b-ddde558b1c31")
 		)
 		(instances
 			(project "HapticDriver"

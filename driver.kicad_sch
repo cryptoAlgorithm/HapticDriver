@@ -2155,6 +2155,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C2845158"
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "27"
 			(uuid "200bce27-70ff-4eda-89b9-43e27aa53310")
 		)
@@ -2322,7 +2331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C524553"
+		(property "Part" "C1532"
 			(at 135.89 54.61 0)
 			(effects
 				(font
@@ -2546,6 +2555,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C14663"
+			(at 78.74 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f5a78d9d-65e5-420e-9235-e9c2dd1a4322")
 		)
@@ -2689,6 +2707,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 138.43 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C2845158"
 			(at 138.43 53.34 0)
 			(effects
 				(font
@@ -3076,7 +3103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C368595"
+		(property "Part" "C1532"
 			(at 118.11 64.77 0)
 			(effects
 				(font
@@ -3158,7 +3185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C361059"
+		(property "Part" "C52923"
 			(at 135.89 63.5 0)
 			(effects
 				(font
@@ -3606,6 +3633,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 90.17 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C14663"
 			(at 90.17 161.29 0)
 			(effects
 				(font

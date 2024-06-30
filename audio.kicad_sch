@@ -1138,6 +1138,18 @@
 		)
 		(uuid "82f28cbb-1adb-48d7-b99c-8e51b6fa21ac")
 	)
+	(hierarchical_label "MODE"
+		(shape input)
+		(at 119.38 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b2a17004-8565-4840-8e4d-3bd8aef7fdb0")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 139.7 121.92 0)
@@ -1341,7 +1353,7 @@
 		(at 157.48 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -1527,6 +1539,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C14663"
+			(at 189.23 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d13d94bf-3503-44e7-aec2-03a1e20234fc")
 		)
@@ -1597,6 +1618,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C910544"
+			(at 139.7 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "5daed668-0c90-4054-955c-f44db4941e2d")
 		)
@@ -1652,6 +1682,83 @@
 			(project "HapticDriver"
 				(path "/89c84321-602a-4eb8-8dad-33289e154cd9/b3e69e2e-4dc8-4887-b929-c22fdd8d84cb"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 123.19 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afcd3e25-e981-4c1d-b044-7bcecca1cdbf")
+		(property "Reference" "R9"
+			(at 123.19 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "634K"
+			(at 123.19 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 123.19 108.458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 123.19 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C227175"
+			(at 123.19 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b6441b9-e8d1-4444-af71-cbf3602f96aa")
+		)
+		(pin "2"
+			(uuid "7892062c-a5b8-4a33-9322-8b0e681cbd4c")
+		)
+		(instances
+			(project "HapticDriver"
+				(path "/89c84321-602a-4eb8-8dad-33289e154cd9/b3e69e2e-4dc8-4887-b929-c22fdd8d84cb"
+					(reference "R9")
 					(unit 1)
 				)
 			)

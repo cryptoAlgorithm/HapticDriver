@@ -1355,6 +1355,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C13585"
+			(at 153.67 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b021984f-8f5b-4c67-916c-687c44cc7cc8")
 		)
@@ -1423,7 +1432,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C388001"
+		(property "Part" "C14663"
 			(at 166.37 86.36 90)
 			(effects
 				(font
@@ -1598,7 +1607,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "33.2K"
 			(at 187.96 93.9799 0)
 			(effects
 				(font
@@ -1626,6 +1635,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C4216"
 			(at 185.42 92.71 0)
 			(effects
 				(font
@@ -1770,6 +1788,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C13585"
+			(at 140.97 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a52330a2-4f7c-4d26-aeee-66bcbd623a24")
 		)
@@ -1804,7 +1831,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10K"
 			(at 187.96 104.1399 0)
 			(effects
 				(font
@@ -1832,6 +1859,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 185.42 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C25804"
 			(at 185.42 102.87 0)
 			(effects
 				(font
